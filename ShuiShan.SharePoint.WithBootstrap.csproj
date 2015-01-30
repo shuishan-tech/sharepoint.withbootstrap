@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46315D90-6D7E-4625-8113-FBA811F90960}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShuiShan.SharePoint.WithBootstrap</RootNamespace>
+    <AssemblyName>ShuiShan.SharePoint.WithBootstrap</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{597406b7-0bd3-44a9-9bd4-5f9a8cf7935b}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b12efac1-51e3-45c6-9669-95f3f9a802fb}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\fonts\fontawesome-webfont.eot" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\fonts\fontawesome-webfont.woff" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\fonts\FontAwesome.otf" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\bordered-pulled.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\core.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\fixed-width.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\font-awesome.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\icons.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\larger.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\list.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\mixins.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\path.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\rotated-flipped.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\spinning.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\stacked.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\less\variables.less" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\font-awesome.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_bordered-pulled.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_core.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_fixed-width.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_icons.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_larger.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_list.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_mixins.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_path.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_rotated-flipped.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_spinning.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_stacked.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\scss\_variables.scss" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\ShuiShan.SharePoint.WithBootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Modules\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c7560479-f7b8-4a5e-b708-5be109ffd322}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPages\simple.master" />
+    <None Include="Modules\SitePages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b23c14d2-aef4-410e-ab5f-9d16eec4adfd}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{631aafb5-8c57-4147-b78c-a04aea6f9f58}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\css\bootstrap.css" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\css\bootstrap.min.css" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\css\modern-business.css" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\css\font-awesome.css" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\css\font-awesome.min.css" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\js\bootstrap.js" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\js\bootstrap.min.js" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\js\contact_me.js" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\js\jqBootstrapValidation.js" />
+    <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\js\jquery-1.11.0.js" />
+    <Content Include="Modules\MasterPages\Elements.xml" />
+    <Content Include="Modules\SitePages\Elements.xml" />
+    <Content Include="Modules\SitePages\Demo.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls"
+    Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages"
+    Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="Html1" lang="<%$Resources:wss,language_value%>" dir="<%$Resources:wss,multipages_direction_dir_value%>"
+runat="server" xmlns:o="urn:schemas-microsoft-com:office:office" __expr-val-dir="ltr">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="GENERATOR" content="Microsoft SharePoint" />
+    <meta name="progid" content="SharePoint.WebPartPage.Document" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Expires" content="0" />
+    <SharePoint:SPPageManager ID="SPPageManager1" runat="server" />
+    <SharePoint:RobotsMetaTag ID="RobotsMetaTag1" runat="server" />
+    <SharePoint:SPShortcutIcon runat="server" IconUrl="/SiteAssets/favicon.ico" />
+    <%--html head占位控件，引用此母版页的页面可以输出特定内容到head元素内--%>
+    <asp:ContentPlaceHolder ID="PlaceHolderPageHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <title id="onetidTitle">
+        <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server"></asp:ContentPlaceHolder>
+    </title>
+</head>
+<body onload="if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();" onkeydown="if(event.keyCode==8) {event.keyCode=0;}">    
+    <div id="s4-ribboncont">
+        <SharePoint:SPRibbon ID="SPRibbon1" runat="server" PlaceholderElementId="RibbonContainer"
+            Visible="false">
+        </SharePoint:SPRibbon>
+    </div>
+    <%--页面内容占位控件--%>
+    <asp:ContentPlaceHolder ID="PlaceHolderPageMain" runat="server" />
+</body>
+</html>

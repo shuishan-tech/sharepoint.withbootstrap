@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Feature1\Feature1.feature">
+    <None Include="Features\ShuiShan.SharePoint.WithBootstrap\ShuiShan.SharePoint.WithBootstrap.feature">
       <FeatureId>{597406b7-0bd3-44a9-9bd4-5f9a8cf7935b}</FeatureId>
     </None>
     <None Include="key.snk" />
@@ -110,8 +110,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="Features\ShuiShan.SharePoint.WithBootstrap\ShuiShan.SharePoint.WithBootstrap.Template.xml">
+      <DependentUpon>ShuiShan.SharePoint.WithBootstrap.feature</DependentUpon>
     </Content>
     <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\css\bootstrap.css" />
     <Content Include="Layouts\ShuiShan.SharePoint.WithBootstrap\css\bootstrap.min.css" />

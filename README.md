@@ -232,4 +232,3 @@ Bootstrap主要包含三个方面的内容：
 * 部署解决方案包后，示例页面的访问地址： http://xxx.xxx/SitePages/Demo.aspx。
 * 本文可以随意转载，但请留下文章引用地址。
 * 从事SharePoint，但不仅限于SharePoint，相信将来企业应用和互联网应用会融合在一起，并一直致力于此。
-* 交流QQ群：413575985
